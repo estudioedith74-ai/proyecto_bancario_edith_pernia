@@ -14,7 +14,7 @@ public class ClienteIndividual extends Cliente {
     private String dni;
  
     public ClienteIndividual(int nroCliente, String nombre, String apellido, String dni) {
-        super(nroCliente);// LLAMADA OBLIGATORIA: Envía el nroCliente al constructor de la clase padre (Cliente)
+        super(nroCliente);
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;

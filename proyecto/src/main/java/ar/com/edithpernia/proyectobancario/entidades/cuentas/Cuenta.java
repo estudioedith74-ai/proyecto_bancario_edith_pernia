@@ -9,14 +9,14 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @ToString
-@RequiredArgsConstructor//incluye todos los atributos marcados como final o aquellos marcados como @NonNull
+@RequiredArgsConstructor
 public abstract class Cuenta {
  
     private final int nro;
     private final Cliente clienteAsociado;   // final: se recibe una sola vez, en el constructor, no cambia despues
     private double saldo;
  
-    // Se queda CONCRETO: ninguna hija cambia esta regla, todas depositan igual.
+
     public void depositarEfectivo(double efectivo) {
         if (efectivo > 0) this.saldo += efectivo;
         else System.out.println("No se pueden depositar montos negativos o iguales a cero.");

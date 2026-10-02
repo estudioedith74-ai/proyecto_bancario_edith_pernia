@@ -16,8 +16,7 @@ public class CuentaConvertibilidad extends CuentaCorriente {
         super(nro, clienteAsociado, montoAutorizadoDescubierto);
     }
  
-    // No hace falta volver a sobrescribir extraerEfectivo: hereda la version de
-    // CuentaCorriente (con sobregiro (descubierto aqui) en pesos), que ya cumple el contrato de Cuenta.
+   
  
     public void depositarDolares(double dolares) {
         if (dolares > 0) this.saldoDolar += dolares;
